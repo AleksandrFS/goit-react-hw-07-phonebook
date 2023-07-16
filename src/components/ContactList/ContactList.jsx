@@ -9,7 +9,8 @@ import { getContactsThunk, deleteContactsThunk } from 'redux/thunk';
 import { useEffect } from 'react';
 
 export const ContactList = () => {
-  const { contacts, error, isLoading } = useSelector(state => state.contacts);
+// , isLoading
+  const { contacts, error } = useSelector(state => state.contacts);
   const filter = useSelector(filterForContacts);
  
 
