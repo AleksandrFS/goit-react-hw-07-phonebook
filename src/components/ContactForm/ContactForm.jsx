@@ -7,7 +7,7 @@ import { addContactsThunk } from 'redux/thunk';
 
 export const ContactForm = () => {
   
-  const {contacts, error, isLoading,id} = useSelector((state)=> state.contacts)
+  const {contacts, error, isLoading} = useSelector((state)=> state.contacts)
 
   const dispatch = useDispatch();
 
